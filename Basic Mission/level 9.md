@@ -17,3 +17,17 @@ This level seems a lot trickier then it actually is, and it helps to have an und
 						 <input value="submit" type="submit"></form>
 </center></center>
 ```
+SO it mentioned there are some sort of filtering script but I don't see any textbox like level 8 but with a little hint that we can use level 8 to get level 9 password 
+
+we can go back to level 8 execute the following command
+```html
+<!--#exec cmd="ls ../../9"-->
+```
+This will list the files in level 9 
+```text
+Hi, index.php p91e283zc3.php!
+
+Your name contains 24 characters.
+```
+and our file is **p91e283zc3.php**
+Now we can go back to level 9 challenge access this file from the browser and we have got our password 
